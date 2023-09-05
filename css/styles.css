@@ -389,6 +389,12 @@ body {
         margin-left: 20px;
     }
 
+    .link-site {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #004869;
+    }
+
     /*=====  End of PRESS RELEASE  ======*/
 
 /*=====  End of PRESS REALEASE PAGE  ======*/
@@ -887,6 +893,10 @@ body {
         .press-text p {
             text-align: justify;
             line-height: 25 + px;
+        }
+
+        .link-site {
+            font-size: 1.25rem;
         }
 
         /*=====  End of PRESS RELEASE  ======*/
