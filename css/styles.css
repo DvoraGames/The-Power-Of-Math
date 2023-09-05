@@ -295,6 +295,8 @@ body {
         letter-spacing: 1px;
         text-align: center;
 
+        font-weight: 900;
+
         padding-bottom: 2%;
     }
 
@@ -305,6 +307,12 @@ body {
         letter-spacing: 1px;
         line-height: 35px;
         text-align: justify;
+
+        font-weight: 400;
+    }
+
+    .about-text p::first-letter {
+        margin-left: 2%;
     }
 
     /*=====  End of ABOUT  ======*/
@@ -338,7 +346,7 @@ body {
         align-items: center;
         justify-content: flex-start;
 
-        padding: 3% 2%;
+        padding: 2% 4%;
 
         background-color: #ccc;
 
@@ -369,6 +377,7 @@ body {
         width: 100%;
         text-align: center;
         font-size: 1.5rem;
+        color: #202020;
     }
 
     .press-text p {
@@ -689,7 +698,7 @@ body {
 
             padding: 0 5%;
 
-            transition: 2s ease;
+            transition: 1s ease;
             background-color: #000000ea;
         }
 
@@ -831,7 +840,11 @@ body {
 
         .about-text {
             font-size: 1rem;
-            line-height: 30px;
+            line-height: 25px;
+        }
+
+        .about-text p::first-letter {
+            margin-left: 4%;
         }
 
         /*=====  End of ABOUT  ======*/
@@ -850,7 +863,7 @@ body {
 
         .press-card {
             width: 90%;
-            padding: 5%;
+            padding: 6%;
         }
 
         .press-release {
