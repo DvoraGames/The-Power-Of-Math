@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Power Of Math - Contato</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/33d0a2ea1c.js" crossorigin="anonymous"></script>
+
+    <script src="./../js/scrollHeader.js"></script>
+
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+
+<body>
+
+    <header id="header">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a id="logo-header" class="logo-link" href="./../index.html"><img class="logo-img"
+                    src="./../images/logo.png" alt="logo"></a>
+        </div>
+
+        <div id="menu-btn" class="menu-btn">
+            <div class="hamburger">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <nav class="navbar">
+            <ul class="links-navbar">
+                <li><a class="text-navbar" href="./../pages/imprensa.html">Imprensa</a></li>
+                <li><a class="text-navbar" href="./../pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="form-container">
+
+        <!-- Formulario -->
+        <form class="form" name="dados" id="dados" method="post" action="">
+
+            <!-- Cabeçalho Formulario -->
+            <div class="form-header">
+                <h3 class="form-title">Contato</h3>
+            </div>
+
+            <div class="div-input inputs">
+                <input class="input" type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                <a href="#nome"><i class="fa-solid fa-user icones"></i></a>
+            </div>
+
+            <div class="div-input inputs">
+                <input class="input" type="email" name="email" id="email" placeholder="Seu Email" required>
+                <a href="#email"><i class="fa-solid fa-envelope icones"></i></a>
+            </div>
+
+            <div class="div-input inputs">
+                <input class="input" type="tel" name="celular" id="celular" placeholder="Seu Celular" required>
+                <a href="#celular"><i class="fa-solid fa-phone icones"></i></a>
+            </div>
+
+            <div class="div-textarea inputs">
+                <textarea class="textarea" name="mensagem" id="mensagem"
+                    placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="reset" name="limpar" id="limpar"><i class="fa-solid fa-eraser"></i></button>
+                <button type="submit" name="enviar" id="enviar">Enviar</button>
+            </div>
+
+        </form>
+    </section>
+
+
+
+    <footer>
+        <h3 class="text-footer-normal">DvoraGames - Todos os direitos reservados</h3>
+        <h3 class="text-footer-mobile">DvoraGames <br> Todos os direitos reservados</h3>
+    </footer>
+</body>
+</html>

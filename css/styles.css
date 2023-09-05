@@ -1,0 +1,921 @@
+/*=============================================
+=                  Reset CSS                  =
+=============================================*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    background-image: url(./../images/BG-Branco.png);
+    background-size: auto 100vh;
+    background-position: center 0;
+}
+
+/*=====  End of Reset CSS  ======*/
+
+/*=============================================
+=                    GERAL                    =
+=============================================*/
+
+    /*=============================================
+    =                   HEADER                    =
+    =============================================*/
+
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 5%;
+
+        transition: top 1s;
+
+        background-image: linear-gradient(to bottom, #0e88b5 50%, transparent 50%);
+        background-size: 200% 200%;
+        background-position: 0 0%;
+
+        z-index: 999;
+    }
+
+    .logo {
+        position: relative;
+        width: auto;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        top: 0;
+
+        z-index: 99;
+
+        transition: background-position 1s;
+        transition: top 1s;
+
+        padding: 10px 0;
+    }
+
+    .logo-link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-img {
+        height: 100%;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 5%;
+        width: auto;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .links-navbar {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .links-navbar li {
+        width: 150px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #f6e200;
+        border: 4px solid #f6e200;
+
+        transition: 1s;
+    }
+
+    .links-navbar li:hover {
+        background-color: #0e88b5;
+    }
+
+    .links-navbar li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+
+        transition: color 1s;
+    }
+
+    /*=====  End of HEADER  ======*/
+
+    /*=============================================
+    =                  FOOTER                     =
+    =============================================*/
+
+    footer {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #0e88b5;
+        color: #000000;
+    }
+
+    .text-footer-mobile {
+        display: none;
+    }
+
+    .text-footer-normal {
+        display: flex;
+    }
+
+    /*=====  End of FOOTER  ======*/
+
+/*=====  End of GERAL  ======*/
+
+/*=============================================
+=                 INDEX PAGE                  =
+=============================================*/
+
+    /*=============================================
+    =                   HERO                      =
+    =============================================*/
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10%;
+
+        background-image: url(./../images/hero-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-bottom: 4px solid #096080;
+    }
+
+    .hero-title {
+        width: 30%;
+    }
+
+    .hero-text {
+        font-size: 1.8rem;
+        text-align: center;
+
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    /*=====  End of HERO  ======*/
+
+    /*=============================================
+    =                   CARDS                     =
+    =============================================*/
+
+    .cards-container {
+        width: 100%;
+        min-height: calc(100vh - 100px);
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        padding: 0 5%;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-item {
+        width: 48%;
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        text-align: center;
+
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff;
+
+        border: 4px solid #096080;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .card-title {
+        width: 100%;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 2rem;
+
+        padding: 2.5%;
+    }
+
+    .card-text {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        padding: 3% 8%;
+    }
+
+    /*=====  End of CARDS ======*/
+
+    /*=============================================
+    =                   ABOUT                     =
+    =============================================*/
+
+    .about {
+        width: 100%;
+        min-height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 5% 5%;
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 2% 3%;
+
+        border-radius: 20px;
+
+        background-color: #096080;
+        color: #fff;
+    }
+
+    .about-title {
+        width: 100%;
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding-bottom: 2%;
+    }
+
+    .about-text {
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        line-height: 35px;
+        text-align: justify;
+    }
+
+    /*=====  End of ABOUT  ======*/
+
+/*=====  End of INDEX PAGE  ======*/
+
+/*=============================================
+=             PRESS REALEASE PAGE             =
+=============================================*/
+
+    /*=============================================
+    =                PRESS RELEASE                =
+    =============================================*/
+
+    .press-container {
+        width: 100%;
+        min-height: calc(100vh - 100px - 10vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 4% 0;
+    }
+
+    .press-card {
+        width: 70%;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 3% 2%;
+
+        background-color: #ccc;
+
+        border-radius: 20px;
+    }
+
+    .press-release {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #c70000;
+    }
+
+    .press-title {
+        width: 100%;
+        padding: 4% 0;
+        text-align: center;
+        font-size: 2rem;
+
+        font-weight: 600;
+    }
+
+    .enfase {
+        font-weight: 900;
+    }
+
+    .press-text {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .press-text p {
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .press-text p::first-letter {
+        margin-left: 20px;
+    }
+
+    /*=====  End of PRESS RELEASE  ======*/
+
+/*=====  End of PRESS REALEASE PAGE  ======*/
+
+/*=============================================
+=                CONTATO PAGE                 =
+=============================================*/
+
+    /*=============================================
+    =                   FORMS                     =
+    =============================================*/
+
+    .form-container {
+        width: 100%;
+        min-height: calc(100vh - 100px - 10vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 4% 0;
+    }
+
+    .form {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+
+        gap: 1rem;
+
+        background-color: #ccc;
+
+        overflow: hidden;
+
+        border-radius: 20px;
+    }
+
+    .form-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #096080;
+    }
+
+    .form-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 3%;
+
+        color: #fff;
+    }
+
+    .inputs {
+        width: 95%;
+        border: 1px solid rgb(100, 100, 100);
+    }
+
+    .div-input {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .div-input a {
+        width: 4rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .icones {
+        height: 70%;
+        color: white;
+    }
+
+    .input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 0;
+    }
+
+    .div-textarea {
+        height: 21vh;
+
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .textarea {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        resize: none;
+        padding: 10px 0 0 10px;
+    }
+
+    .buttons {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    button {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+        transition: 0.25s;
+    }
+
+    #limpar {
+        width: 3.8rem;
+        height: 3.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgb(255, 82, 82);
+    }
+
+    .fa-eraser {
+        height: 50%;
+
+        color: #000;
+    }
+
+    #enviar {
+        width: 7.6rem;
+        height: 3.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.25rem;
+        color: #000;
+
+        background-color: #0e88b5;
+    }
+
+    .input:focus,
+    .textarea:focus {
+        outline: none;
+    }
+
+    .div-input:focus-within,
+    .div-textarea:focus-within {
+        outline: black solid 2px;
+        border: 1px solid black;
+    }
+
+    #nome:focus+a .fa-user {
+        color: #f6e200;
+    }
+
+    #email:focus+a .fa-envelope {
+        color: #0e88b5;
+    }
+
+    #celular:focus+a .fa-phone {
+        color: #fa8251;
+    }
+
+    #form_Page footer {
+        position: absolute;
+        top: 100vh;
+    }
+
+    /*=====  End of FORMS  ======*/
+
+/*=====  End of CONTATO PAGE ======*/
+
+
+/*=============================================
+=                 Media Query                 =
+=============================================*/
+
+@media screen and (max-width: 900px) {
+
+    /*=============================================
+    =                   GERAL                    =
+    =============================================*/
+    
+        /*=============================================
+        =                   HEADER                    =
+        =============================================*/
+
+        header {
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .logo {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            display: flex;
+
+            background-image: linear-gradient(to bottom, #0e88b5 50%, transparent 50%);
+            background-size: 200% 200%;
+            background-position: 0 0%;
+
+            z-index: 99;
+        }
+
+        .logo-link {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5%;
+
+            top: 0px;
+            transition: top 1s;
+
+            z-index: 999;
+        }
+
+        .logo-img {
+            height: 80%;
+        }
+
+        .menu-btn {
+            position: fixed;
+            top: 2.5%;
+            right: 5%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background-color: #096080;
+            z-index: 999;
+        }
+
+        .hamburger {
+            width: 70%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bar {
+            width: 100%;
+            height: 8px;
+
+            border-radius: 80px;
+            background-color: #ecf0f1;
+
+            transform-origin: center;
+
+            transition: 0.5s;
+        }
+
+        #menu-btn.active {
+            background-color: red;
+        }
+
+        #menu-btn.active .bar2 {
+            opacity: 0;
+        }
+
+        #menu-btn.active .bar1 {
+            transform: translateY(11px) rotate(-45deg);
+        }
+
+        #menu-btn.active .bar3 {
+            transform: translateY(-11px) rotate(45deg);
+        }
+
+        .navbar {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            position: fixed;
+            top: -100%;
+            right: 0%;
+
+            padding: 0 5%;
+
+            transition: 2s ease;
+            background-color: #000000ea;
+        }
+
+        .navbar.down {
+            width: 100%;
+            top: 0px;
+            padding-top: 100px;
+        }
+
+        .links-navbar {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 5% 0;
+
+            gap: 10px;
+        }
+
+        .links-navbar li {
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        .links-navbar li:hover {
+            background-color: #f6e200;
+        }
+
+        .links-navbar li a {
+            font-size: 1.5rem;
+        }
+
+
+        /*=====  End of HEADER  ======*/
+
+            /*=============================================
+            =                  FOOTER                     =
+            =============================================*/
+
+            footer {
+                font-size: 0.8rem;
+
+                background-color: #0e88b5;
+            }
+
+            .text-footer-mobile {
+                display: flex;
+                text-align: center;
+                line-height: 20px;
+            }
+
+            .text-footer-normal {
+                display: none;
+            }
+
+            /*=====  End of FOOTER  ======*/
+    
+    /*=====  End of GERAL  ======*/
+    
+    /*=============================================
+    =                 INDEX Page                  =
+    =============================================*/
+
+        /*=============================================
+        =                    HERO                     =
+        =============================================*/
+
+        .hero-title {
+            width: 60%;
+        }
+
+        .hero-text {
+            width: 80%;
+            font-size: 1.2rem;
+            text-align: center;
+
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 35px;
+        }
+
+        /*=====  End of HERO  ======*/
+
+        /*=============================================
+        =                    CARDS                    =
+        =============================================*/
+
+        .cards-container {
+            padding: 5% 5% 0;
+        }
+
+        .cards{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .card-item {
+            width: 100%;
+            margin-top: 5%;
+            border-radius: 15px;
+        }
+
+        .card-item:first-child {
+            margin-top: 0;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+
+            padding: 5%;
+        }
+
+        .card-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+
+            padding: 10% 8%;
+        }
+
+        /*=====  End of CARDS  ======*/
+
+        /*=============================================
+        =                   ABOUT                     =
+        =============================================*/
+
+        .about {   
+            padding: 5%;
+        }
+
+        .about-container {
+            padding: 5%;
+        }
+
+        .about-title {
+            padding: 0 0 5%;
+            font-size: 2rem;
+        }
+
+        .about-text {
+            font-size: 1rem;
+            line-height: 30px;
+        }
+
+        /*=====  End of ABOUT  ======*/
+
+    /*=============================================
+    =             PRESS REALEASE PAGE             =
+    =============================================*/
+
+        /*=============================================
+        =                PRESS RELEASE                =
+        =============================================*/
+
+        .press-container {
+            padding: 5% 0;
+        }
+
+        .press-card {
+            width: 90%;
+            padding: 5%;
+        }
+
+        .press-release {
+            font-size: 1.1rem;
+        }
+
+        .press-title {
+            padding: 10% 0;
+            font-size: 1.4rem;
+        }
+
+        .enfase {
+            font-weight: 800;
+        }
+
+        .press-text {
+            width: 100%;
+            font-size: 1.25rem;
+        }
+
+        .press-text p {
+            text-align: justify;
+            line-height: 25 + px;
+        }
+
+        /*=====  End of PRESS RELEASE  ======*/
+
+    /*=====  End of PRESS REALEASE PAGE  ======*/
+
+        /*=============================================
+    =             CONTATO PAGE             =
+    =============================================*/
+
+        /*=============================================
+        =            FORMS            =
+        =============================================*/
+
+        .form-container{
+            padding: 5% 0;
+        }
+
+        .form {
+            width: 90%;
+            gap: 0.8rem;
+
+        }
+
+        .inputs {
+            width: 92%;
+        }
+
+        .input {
+            font-size: 1rem;
+        }
+
+        .buttons {
+            justify-content: space-around;
+            margin-bottom: 4%;
+        }
+
+        /*=====  End of FORMS  ======*/
+
+    /*=====  End of CONTATO PAGE  ======*/
+
+/*=====  End of INDEX PAGE  ======*/
+}
+
+/*=====  End of MEDIA QUERY  ======*/
